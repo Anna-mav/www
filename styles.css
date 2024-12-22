@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.poster-container {
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    background-color: #111;
+}
+
+.animated-svg {
+    width: 100%;
+    height: auto;
+    animation: zoom 8s infinite ease-in-out;
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
